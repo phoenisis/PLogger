@@ -11,6 +11,6 @@ let package = Package(
     ],
     targets: [
         .target(name: "PLogger"),
-        .testTarget(name: "PLoggerTests")
+        .testTarget(name: "PLoggerTests", dependencies: ["PLogger"])
     ]
 )
