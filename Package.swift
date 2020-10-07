@@ -10,8 +10,7 @@ let package = Package(
         .library(name: "PLogger", targets: ["PLogger"])
     ],
     targets: [
-        .target(
-            name: "PLogger",
-            path: "Source/PLogger")
+        .target(name: "PLogger"),
+        .testTarget(name: "PLoggerTests")
     ]
 )
